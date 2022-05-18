@@ -3,3 +3,13 @@ E:\geekbrains\Знакомство с языками программирова�
 E:\geekbrains\Знакомство с языками программирования\Seminar3\Zadacha19\obj\Debug\net6.0\Zadacha19.AssemblyInfoInputs.cache
 E:\geekbrains\Знакомство с языками программирования\Seminar3\Zadacha19\obj\Debug\net6.0\Zadacha19.AssemblyInfo.cs
 E:\geekbrains\Знакомство с языками программирования\Seminar3\Zadacha19\obj\Debug\net6.0\Zadacha19.csproj.CoreCompileInputs.cache
+E:\geekbrains\Знакомство с языками программирования\Seminar3\Zadacha19\bin\Debug\net6.0\Zadacha19.exe
+E:\geekbrains\Знакомство с языками программирования\Seminar3\Zadacha19\bin\Debug\net6.0\Zadacha19.deps.json
+E:\geekbrains\Знакомство с языками программирования\Seminar3\Zadacha19\bin\Debug\net6.0\Zadacha19.runtimeconfig.json
+E:\geekbrains\Знакомство с языками программирования\Seminar3\Zadacha19\bin\Debug\net6.0\Zadacha19.dll
+E:\geekbrains\Знакомство с языками программирования\Seminar3\Zadacha19\bin\Debug\net6.0\Zadacha19.pdb
+E:\geekbrains\Знакомство с языками программирования\Seminar3\Zadacha19\obj\Debug\net6.0\Zadacha19.dll
+E:\geekbrains\Знакомство с языками программирования\Seminar3\Zadacha19\obj\Debug\net6.0\refint\Zadacha19.dll
+E:\geekbrains\Знакомство с языками программирования\Seminar3\Zadacha19\obj\Debug\net6.0\Zadacha19.pdb
+E:\geekbrains\Знакомство с языками программирования\Seminar3\Zadacha19\obj\Debug\net6.0\Zadacha19.genruntimeconfig.cache
+E:\geekbrains\Знакомство с языками программирования\Seminar3\Zadacha19\obj\Debug\net6.0\ref\Zadacha19.dll

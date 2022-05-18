@@ -6,7 +6,7 @@
 
 */
 
-void GetSquar(int N)
+void GetCube(int N)
 {
     foreach (int ind in Enumerable.Range( 1, N ))
     System.Console.Write($"{ind * ind * ind}, ");
@@ -38,4 +38,4 @@ int GetNumber(string msg)
 
 string messageI = "Введите N от 1,  N=";
 int sqr = GetNumber(messageI);
-GetSquar(sqr);
+GetCube(sqr);

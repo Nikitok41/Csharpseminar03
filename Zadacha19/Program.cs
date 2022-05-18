@@ -8,72 +8,82 @@
 */
 
 /*
-int GetNumber(string msg)
-{
-while(true)
-{
-    Console.WriteLine(msg);
-    string valueFromConsole = Console.ReadLine();
-
-    if(int.TryParse(valueFromConsole, out int number))
-    {
-        if(number != 0)  
-            return number;
-        else
-        {
-            Console.WriteLine("Число должно отличаться от 0. Введите другое число");
-        }
-    }
-    else
-    {
-        Console.WriteLine("Вы ввели не число. Нужно ввести число, отличное от нуля.");
-    }
-}
-}
-
-string messageX = "Введите число х: ";
-
-
-int x = GetNumber(messageX);
-
-
-int quater = GetQuarter(x);
-
-Console.WriteLine($"");
-*/
-
-
-
-
-
-
-int GetNumber(string msg) { 
-while(true){ 
+int GetNumber(string msg) 
+{ 
+while(true) 
+{ 
     Console.WriteLine(msg); 
     string valueFromConsole = Console.ReadLine(); 
-    if(int.TryParse(valueFromConsole, out int number)) { 
+ 
+    if(int.TryParse(valueFromConsole, out int number)) 
+    { 
         if(number > 10000 && number < 100000) 
             return number; 
-        else{ 
+ 
+        else   
+        { 
             Console.WriteLine("Число должно быть пятизначным"); 
+ 
         }   
+ 
     } 
-    else{Console.WriteLine("Вы ввели не число. Нужно ввести пятизначное число");
+    else 
+    { 
+        Console.WriteLine("Вы ввели не число. Нужно ввести пятизначное число"); 
+ 
     } 
-    } 
+ 
 } 
- 
-bool IsPalindrome(string number) { 
- for (int i =0; i < number.Length / 2; ++i) 
- { 
-       if (number[i] != number[number.Length -1 - i]) 
-   return false; 
-  }   
-  return true; 
 } 
-string message = "Введите пятизначное число: "; 
+
+string messageX= "Введите число х:"; 
  
+int x = GetNumber(messageX); 
+
+bool result = IsPalindrome(number); 
+
+Console.WriteLine("");
+*/
+
+//shift+alt+f
+
+int GetNumber(string msg) 
+{ 
+while(true) 
+{ 
+    Console.WriteLine(msg); 
+    string valueFromConsole = Console.ReadLine(); 
  
-int x = GetNumber(message); 
-bool result = IsPalindrome(true); 
-Console.WriteLine(result);
+    if(int.TryParse(valueFromConsole, out int number)) 
+    { 
+        if(number > 10000 && number < 100000) 
+            return number; 
+ 
+        else   
+        { 
+            Console.WriteLine("Число должно быть пятизначным"); 
+ 
+        }   
+ 
+    } 
+    else 
+    { 
+        Console.WriteLine("Вы ввели не число. Нужно ввести пятизначное число"); 
+ 
+    } 
+ 
+} 
+} 
+
+string messageV= "Введите число v:";
+int V = GetNumber(messageV); 
+var V =  Console.ReadLine();
+var s = V.ToString();
+if (s.Reverse().SequenceEqual(s)) Console.WriteLine("Палиндром!");
+
+bool IsPalindrome(string s)
+{
+    for (int i = 0; i < s.Length / 2; ++i)
+        if (s[i] != s[s.Length - 1 - i]) return false;
+    return true;
+}
