@@ -1,0 +1,5 @@
+E:\geekbrains\Знакомство с языками программирования\Seminar3\Zadacha21\obj\Debug\net6.0\Zadacha21.csproj.AssemblyReference.cache
+E:\geekbrains\Знакомство с языками программирования\Seminar3\Zadacha21\obj\Debug\net6.0\Zadacha21.GeneratedMSBuildEditorConfig.editorconfig
+E:\geekbrains\Знакомство с языками программирования\Seminar3\Zadacha21\obj\Debug\net6.0\Zadacha21.AssemblyInfoInputs.cache
+E:\geekbrains\Знакомство с языками программирования\Seminar3\Zadacha21\obj\Debug\net6.0\Zadacha21.AssemblyInfo.cs
+E:\geekbrains\Знакомство с языками программирования\Seminar3\Zadacha21\obj\Debug\net6.0\Zadacha21.csproj.CoreCompileInputs.cache
