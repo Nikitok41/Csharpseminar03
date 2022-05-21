@@ -7,83 +7,48 @@
 
 */
 
-/*
-int GetNumber(string msg) 
-{ 
-while(true) 
-{ 
-    Console.WriteLine(msg); 
-    string valueFromConsole = Console.ReadLine(); 
- 
-    if(int.TryParse(valueFromConsole, out int number)) 
-    { 
-        if(number > 10000 && number < 100000) 
-            return number; 
- 
-        else   
-        { 
-            Console.WriteLine("Число должно быть пятизначным"); 
- 
-        }   
- 
-    } 
-    else 
-    { 
-        Console.WriteLine("Вы ввели не число. Нужно ввести пятизначное число"); 
- 
-    } 
- 
-} 
-} 
+Console.Clear();
 
-string messageX= "Введите число х:"; 
- 
-int x = GetNumber(messageX); 
+Console.WriteLine("Задача 19:\n Напишите программу, которая принимает на вход пятизначное число\n и проверяет, является ли оно палиндромом.");
 
-bool result = IsPalindrome(number); 
+/* Изначально программа была кторое, но в итоге решил сделать максимум функций*/
+/* Цикл проверки введённой переменной */
 
-Console.WriteLine("");
-*/
-
-//shift+alt+f
-
-int GetNumber(string msg) 
-{ 
-while(true) 
-{ 
-    Console.WriteLine(msg); 
-    string valueFromConsole = Console.ReadLine(); 
- 
-    if(int.TryParse(valueFromConsole, out int number)) 
-    { 
-        if(number > 10000 && number < 100000) 
-            return number; 
- 
-        else   
-        { 
-            Console.WriteLine("Число должно быть пятизначным"); 
- 
-        }   
- 
-    } 
-    else 
-    { 
-        Console.WriteLine("Вы ввели не число. Нужно ввести пятизначное число"); 
- 
-    } 
- 
-} 
-} 
-
-string messageV= "Введите число v:";
-int V = GetNumber(messageV); 
-var V =  Console.ReadLine();
-var s = V.ToString();
-if (s.Reverse().SequenceEqual(s)) Console.WriteLine("Палиндром!");
-
-bool IsPalindrome(string s)
-{
-    for (int i = 0; i < s.Length / 2; ++i)
-        if (s[i] != s[s.Length - 1 - i]) return false;
-    return true;
+string EnterNumberTest(){
+    bool readlineFromStrToInt = true;
+    string numberSTR = "";
+    while (readlineFromStrToInt){
+        Console.Write("Enter 9999 < number < 100000 : ");
+        numberSTR = Console.ReadLine();
+        if (int.TryParse(numberSTR, out int numberInt) ){
+            if (numberSTR.Length != 5 || numberSTR[0] == '-') Console.WriteLine("Entered rong number , try again");
+            else readlineFromStrToInt = false;
+        }  
+    }
+    return numberSTR;
 }
+
+/* Функция Формированичя результата */
+
+string polindromeResult(int sum, string number){
+    string reuslt = (sum == 2 )? $"Yes {number} is polindrome" : $"No {number} is not a polindrome";
+return reuslt;
+}
+
+/* Функцмя проверки на полимер и вывод результата */
+
+string polindromeTest(string number){
+    int sum =0;
+    string result = "";
+    for (int i = 0; i < 2; i++){
+        if (number[i] == number[number.Length-i-1]) sum++;
+    }
+    result = polindromeResult(sum,number);
+return result;
+}
+
+/* Сама программа */ 
+
+string number = EnterNumberTest();
+Console.WriteLine(polindromeTest(number));
+Console.ReadLine();
